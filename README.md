@@ -15,6 +15,15 @@ In case if the authentication fails the QR code would be shown again. And user w
 ```
 sudo rm -rf *.o && gcc -fPIC -fno-stack-protector -c src/*.c -Wall && gcc -shared -o mypam.so *.o && sudo cp mypam.so /lib/security/mypam.so
 ```
+- Edit the file "/etc/pam.d/sshd". Use this command
+```
+nano /etc/pam.d/sshd
+```
+Comment this statement `@include common-auth`.
+Add this below it
+```
+auth    required    mypam.so    debug
+```
 
 - For the **Protlin app**, download the project file from [Protlin](https://github.com/krunalmk/Protlin). And install the app in your phone using Android Studio.
 
