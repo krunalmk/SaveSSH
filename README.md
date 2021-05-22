@@ -20,14 +20,16 @@ sudo rm -rf *.o && gcc -fPIC -fno-stack-protector -c src/*.c -Wall && gcc -share
 
 ## How to use 
 - Execute the following command in your PC ( Linux based OS)
-`ssh username@ip_address`
-- Replace username with remote computer's username and ip_address with IP address of remote computer.
+```
+ssh username@ip_address
+```
+Replace username with remote computer's username and ip_address with IP address of remote computer.
 - Then QR code would be displayed on your computer screen. Scan it with **Protlin app**. Connection must establish with the remote system. If nothing happens then press "Launch URL" button in Protlin app ( after scanning the QR code). This would connect you with the remote system and connection would be established.
 
-_Note:
-_1. Both server and your local computer must be on the same network.
-_2. If the QR code authentication fails 3 times then the remote server would fall back to system default authentication mechanism._
+## **_Note:_**
+1. **_Both server and your local computer must be on the same network._**
+2. **_If the QR code authentication fails 3 times then the remote server would fall back to system default authentication mechanism._**
 
 ## Demo Video
 
-https://drive.google.com/file/d/1lvZEfN-m6Hi55x_LCekqQbzy3N4BEvad/view?usp=sharing
+[SafeSSH video demostration](https://drive.google.com/file/d/1lvZEfN-m6Hi55x_LCekqQbzy3N4BEvad/view?usp=sharing)
