@@ -24,8 +24,8 @@ sudo rm -rf *.o && gcc -fPIC -fno-stack-protector -c src/*.c -Wall && gcc -share
 - Replace username with remote computer's username and ip_address with IP address of remote computer.
 - Then QR code would be displayed on your computer screen. Scan it with **Protlin app**. Connection must establish with the remote system. If nothing happens then press "Launch URL" button in Protlin app ( after scanning the QR code). This would connect you with the remote system and connection would be established.
 
-_Note: _
-_1. Both server and your local computer must be on the same network._
+_Note:
+_1. Both server and your local computer must be on the same network.
 _2. If the QR code authentication fails 3 times then the remote server would fall back to system default authentication mechanism._
 
 ## Demo Video
