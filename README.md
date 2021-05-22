@@ -9,7 +9,7 @@ In case if the authentication fails the QR code would be shown again. And user w
 
 ## Setting up the project in your environment
 
-- Extract the downloaded SaveSSH file. Open terminal in the "SaveSSH" directory.
+- Extract the downloaded SaveSSH file in the **server system**. Open terminal in the "SaveSSH" directory.
 - Execute following command to add the SaveSSH application to secure your SSH.
 
 ```
@@ -19,16 +19,16 @@ sudo rm -rf *.o && gcc -fPIC -fno-stack-protector -c src/*.c -Wall && gcc -share
 ```
 nano /etc/pam.d/sshd
 ```
-Comment this statement `@include common-auth`.
-Add this below it
+- Comment this statement `@include common-auth`
+- Add following to the top of the file
 ```
 auth    required    mypam.so    debug
 ```
-
+- Reboot the system
 - For the **Protlin app**, download the project file from [Protlin](https://github.com/krunalmk/Protlin). And install the app in your phone using Android Studio.
 
 ## How to use 
-- Execute the following command in your PC ( Linux based OS)
+- Execute the following command in your PC ( local system)
 ```
 ssh username@ip_address
 ```
