@@ -275,7 +275,7 @@ struct pam_message msg[1], *pmsg[1];
     wchar_t output_msg_1[100000] =  L"QR:\n\n";
     char output_chr[1000000];
     char output_msg[1000000];
-    char url[1000] = "http://192.168.29.38:8000";
+    char url[1000] = "http://192.168.29.38:8000"; // replace this with IP address of the server computer
     printf("\nurl: %s", url);
     generate_qr(output, url);
     printf("\n%ls", output);
