@@ -10,6 +10,7 @@ In case if the authentication fails the QR code would be shown again. And user w
 ## Setting up the project in your environment
 
 - Extract the downloaded SaveSSH file in the **server system**. Open terminal in the "SaveSSH" directory.
+- Replace the IP address in [line 278](https://github.com/krunalmk/SaveSSH/blob/main/SaveSSH/src/main.c#:~:text=char%20url%5B1000%5D%20%3D%20%22http%3A%2F%2F192.168.29.38%3A8000%22%3B%20%2F%2F%20replace%20this%20with%20ip%20address%20of%20the%20server%20computer) with the IP address of server.
 - Execute following command to add the SaveSSH application to secure your SSH.
 
 ```
